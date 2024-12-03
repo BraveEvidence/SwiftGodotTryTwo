@@ -10,7 +10,7 @@ import SwiftGodot
 )
 
 @Godot // If Godot needs to see the class, it needs this bit
-class MyLibrary {
+class MyLibrary: RefCounted {
     @Callable // If Godot needs to execute a function, you need this bit
     func addition(a:Int, b:Int) -> Int {
         a+b
